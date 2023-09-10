@@ -1,0 +1,45 @@
+.form p {
+    font-style:italic;
+    font-size: 1.2vw * 1rem;
+}
+
+.req {
+    color:grey;
+}
+
+.name {
+    display: flex;
+    column-gap: 50px;
+}
+
+.fname, .lname{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-top: 18px;
+}
+
+.submit {
+    color: white;
+    background-color: black;
+    font-family: Merriweather;
+    font-size: 14px;
+    padding: 1em 2.5em;
+}
+
+input {
+    width: 100%;
+    border: solid 1px #a9a9a9;
+    border-radius: 0;
+    box-shadow: 0 0 0 1px transparent;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+input[type="submit"] {
+    width: auto;
+}
+
+.msg input {
+    height: 60px;
+}

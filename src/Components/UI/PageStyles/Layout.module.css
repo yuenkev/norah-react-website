@@ -1,0 +1,28 @@
+/* Styles for the Layout.Js */
+nav {
+    display:flex; 
+    flex-direction:row;
+    justify-content: space-between;
+  }
+  
+  body {
+    font-family: Merriweather;
+    letter-spacing: 0.6px;
+  }
+  
+  .navbar {
+    list-style-type: none;
+    text-align: right;
+    display: flex;
+  }
+
+  .navbar li {
+    display: inline-block;
+    padding-right: 2.6vw;
+  } 
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+

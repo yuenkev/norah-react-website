@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Merriweather";
+  src: url(/src/Components/Assets/Font/Merriweather-Regular.ttf);
+}
+
+.nav {
+  font-family: MerriWeather;
+}

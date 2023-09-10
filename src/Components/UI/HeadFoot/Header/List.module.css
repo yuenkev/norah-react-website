@@ -1,0 +1,19 @@
+.list {
+    position: absolute;
+    box-sizing: border-box;
+    text-align: right;
+    width: 100%;
+    
+    display: flex;
+    justify-content: right;
+    padding-right: 12.7vw;
+    margin-top: -70px;
+
+    /* The right CSS property participates in specifying the horizontal position of a positioned element. It has no effect on non-positioned elements. */
+    right: 0;
+
+}
+
+ul {
+    list-style-type: none;
+}
