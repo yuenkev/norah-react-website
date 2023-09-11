@@ -1,4 +1,31 @@
 .press h4 {
-    font-size: 1.6rem;
-    text-align: center;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 400;
+}
+
+.press {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 7vw;
+}
+
+.link {
+  text-decoration: underline;
+}
+
+.desc {
+  font-style: italic;
+}
+
+.hits {
+  display: flex;
+  /* Property sets whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked. */
+  flex-wrap: wrap;
+}
+
+.col {
+  /* Sets how a flex item will grow or shrink to fit the space available in its flex container. */
+  flex: 33.33%;
+  text-align: center;
 }
