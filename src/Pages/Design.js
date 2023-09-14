@@ -1,5 +1,11 @@
+import Des from "../Components/UI/Designs/Des";
+
 const Design = () => {
-    return <h1>Design</h1>;
+    return (
+      <div>
+        <Des/>
+      </div>
+    )
   };
   
   export default Design;
