@@ -52,14 +52,3 @@ export const work = [
   }
 ];
 
-export const dance = [
-    {
-        title: "DancelifeX Promo",
-        desc: "On a freelance videography job, I worked with 12 different professional choreographers to produce/direct promotional video content for their social media out lets. Here are two examples that I directed, shot and edited.",
-        vids: [
-          {
-            video: "<div style=\"padding:56.25% 0 0 0;position:relative;\"><iframe src=\"https://player.vimeo.com/video/690777686?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" style=\"position:absolute;top:0;left:0;width:100%;height:100%;\" title=\"ARTIE\"></iframe></div><script src=\"https://player.vimeo.com/api/player.js\"></script>"
-          }
-        ]
-      }
-]
