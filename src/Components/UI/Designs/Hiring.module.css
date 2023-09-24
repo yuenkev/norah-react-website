@@ -1,0 +1,13 @@
+.content {
+    display: flex;
+    flex-direction: row;
+}
+
+.item {
+    flex-basis: 33.3%;
+    gap: 15px;
+}
+
+img {
+    max-width: 550px;
+}
