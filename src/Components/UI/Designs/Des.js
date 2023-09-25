@@ -2,6 +2,8 @@ import React from "react";
 import classes from "./Des.module.css";
 import Comic from "./Comic";
 import Hiring from "./Hiring";
+import Corp from "./Corp";
+import Theme from "./Theme";
 
 const Des = () => {
   return (
@@ -9,6 +11,8 @@ const Des = () => {
       <h1 className={classes.title}>Design & Layout Projects</h1>
       <Comic />
       <Hiring />
+      <Corp />
+      <Theme/>
     </div>
   );
 };

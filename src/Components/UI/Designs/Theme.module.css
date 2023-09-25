@@ -1,4 +1,4 @@
-.content {
+.vids {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -6,8 +6,5 @@
 
 .item {
     flex-basis: 33.3%;
-}
-
-img {
-    max-width: 550px;
+    gap: 15px;
 }

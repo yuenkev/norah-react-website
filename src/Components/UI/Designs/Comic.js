@@ -9,7 +9,7 @@ const Comic = () => {
         <em>Comic Book Cover Assignment</em>
       </h3>
       <div className={classes.intro}>
-        <img src={gary} alt="gary" className={classes.item} />
+        <img src={gary} alt="gary" className={classes.item && classes.gary} />
         <div>
           <p>
             For my GCM 130 (Design & Layout) class, we were given the task of
