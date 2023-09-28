@@ -1,5 +1,11 @@
+import Pho from "../Components/UI/Photos/Butter";
+
 const Photo = () => {
-    return <h1>Photo</h1>;
+    return (
+      <div>
+        <Pho />
+      </div>
+    );
   };
   
   export default Photo;
