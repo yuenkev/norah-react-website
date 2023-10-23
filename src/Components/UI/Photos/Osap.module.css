@@ -1,0 +1,16 @@
+.Osap {
+    text-align: center;
+}
+
+.Row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.Item {
+    max-width: 40%;
+    padding: 20px;
+    text-align: center;
+}

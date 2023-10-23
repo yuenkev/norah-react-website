@@ -1,4 +1,4 @@
-import Pho from "../Components/UI/Photos/Butter";
+import Pho from "../Components/UI/Photos/Pho";
 
 const Photo = () => {
     return (

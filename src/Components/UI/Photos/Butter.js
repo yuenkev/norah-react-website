@@ -4,7 +4,7 @@ import pho1 from "../../Assets/Images/Photo/1.jpeg";
 import pho2 from "../../Assets/Images/Photo/2.jpeg";
 import pho3 from "../../Assets/Images/Photo/3.jpeg";
 
-const Pho = () => {
+const Butter = () => {
   return (
     <div className={classes.Pho}>
       <h4 className={classes.title}>Buffer Film Festival (2019)</h4>
@@ -17,4 +17,4 @@ const Pho = () => {
   );
 };
 
-export default Pho;
+export default Butter;
