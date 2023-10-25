@@ -3,6 +3,7 @@ import classes from "./Pho.module.css";
 import Butter from "./Butter";
 import Osap from "./Osap";
 import PPF from "./PPF";
+import Cold from "./Cold";
 
 const Pho = () => {
   return (
@@ -10,6 +11,7 @@ const Pho = () => {
         <Butter />
         <Osap />
         <PPF />
+        <Cold />
     </div>
   );
 };

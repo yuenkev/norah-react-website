@@ -1,0 +1,33 @@
+.cold {
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+.outer {
+    display: flex;
+    flex-direction: column;
+    align-items:normal;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Loose {
+    max-width: 100%;
+    padding-bottom: 40px;
+}
+
+.Item {
+    text-align: center;
+    max-width: 49%;
+    justify-content: space-around;
+}
+
+
