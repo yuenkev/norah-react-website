@@ -5,6 +5,7 @@ import Osap from "./Osap";
 import PPF from "./PPF";
 import Cold from "./Cold";
 import Leaf from "./Leaf";
+import Nathan from "./Nathan";
 
 const Pho = () => {
   return (
@@ -14,6 +15,7 @@ const Pho = () => {
         <PPF />
         <Cold />
         <Leaf />
+        <Nathan />
     </div>
   );
 };

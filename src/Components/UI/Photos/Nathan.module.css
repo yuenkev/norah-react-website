@@ -1,7 +1,7 @@
-.Leaf {
+.Nathan {
     text-align: center;
-    margin-left: 10rem;
-    margin-right: 10rem;
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
 }
 
 .Row {
@@ -12,7 +12,7 @@
 }
 
 .Item {
-    max-width: 45%;
+    max-width: 40%;
     padding: 20px;
     text-align: center;
 }
