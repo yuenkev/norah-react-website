@@ -1,0 +1,18 @@
+.Leaf {
+    text-align: center;
+    /* margin-left: 10rem;
+    margin-right: 10rem; */
+}
+
+.Row {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+}
+
+.Item {
+    max-width: 45%;
+    padding: 20px;
+    text-align: center;
+}
