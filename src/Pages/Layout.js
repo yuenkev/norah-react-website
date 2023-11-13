@@ -7,6 +7,8 @@ import List from "../Components/UI/HeadFoot/Header/List";
 import Footer from "../Components/UI/HeadFoot/Footer/Footer";
 import classes from "../Components/UI/PageStyles/Layout.module.css";
 
+import resume from "../Components/Assets/RESUME_NORAHKIM.pdf";
+
 const Layout = () => {
   //useState for displaying the portfolio menu
   const [display, setDisplay] = useState(false);
@@ -45,7 +47,7 @@ const Layout = () => {
             </Link>
           </li>
           <li>
-            <Link>resume/cv</Link>
+            <a href={resume}>resume/cv</a>
           </li>
         </ul>
       </nav>
