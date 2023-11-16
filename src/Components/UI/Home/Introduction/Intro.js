@@ -16,6 +16,10 @@ const Intro = () => {
         distribution in attempts to expand her skillsets.{" "}
       </p>
       <br></br>
+      <p>
+        For collaboration or work inquiries please fill out the following form:
+      </p>
+      <br></br>
     </div>
   );
 };

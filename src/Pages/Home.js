@@ -1,14 +1,18 @@
 import Intro from "../Components/UI/Home/Introduction/Intro";
 import Form from "../Components/UI/Home/Form/Form";
 import classes from "../Components/UI/PageStyles/Home.module.css";
+import { Fade } from "react-awesome-reveal";
 
 const Home = () => {
-    return ( 
+  return (
+
       <div className={classes.home}>
-        <Intro/>
+        <Fade direction="up" duration={1000}>
+          <Intro />
+        </Fade>
         <Form />
       </div>
-    );
-  };
-  
-  export default Home;
+  );
+};
+
+export default Home;

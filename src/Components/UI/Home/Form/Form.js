@@ -4,11 +4,6 @@ import classes from "./Form.module.css";
 const Form = () => {
   return (
     <div className={classes.form}>
-      <p>
-        For collaboration or work inquiries please fill out the following form:
-      </p>
-      <br></br>
-
       <form>
         {/* Name Section */}
         <section>
