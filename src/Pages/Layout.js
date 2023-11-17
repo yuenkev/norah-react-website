@@ -27,7 +27,7 @@ const Layout = () => {
   return (
     <>
       {/* Permanent Header */}
-      <Fade direction="up" duration={1000}>
+      <Fade direction="up" duration={1000} triggerOnce="true">
         <nav>
           {/* I put the logo here to make it coupled with the navbar */}
           <Link to="/home">
@@ -63,7 +63,7 @@ const Layout = () => {
       <Outlet />
 
       {/* Permanent Footer */}
-      <Fade direction="up" duration={1000}>
+      <Fade direction="up" duration={1000} triggerOnce="true">
         <Footer />
       </Fade>
     </>
