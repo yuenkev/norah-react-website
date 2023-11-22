@@ -9,25 +9,27 @@ const Work = () => {
       {work.map((work) => {
         return (
           <div>
-            <Fade direction="up" duration={1000} triggerOnce="true">
+            <Fade direction="up" duration={1200} triggerOnce="true">
               <h1>{work.title}</h1>
             </Fade>
             {/* For loop to map out the individual work */}
             {work.arts.map((arts) => {
               return (
-                <Fade direction="up" duration={1000} triggerOnce="true">
-                  <div className={classes.art}>
+                <div className={classes.art}>
+                  <Fade direction="up" duration={1000} triggerOnce="true">
                     <p>
                       <a href={arts.link} className={classes.links}>
                         {arts.title}
                       </a>{" "}
                       {arts.year}
                     </p>
+                  </Fade>
+                  <Fade direction="up" duration={1200} triggerOnce="true">
                     <p className={classes.desc}>
                       <em>{arts.desc}</em>
                     </p>
-                  </div>
-                </Fade>
+                  </Fade>
+                </div>
               );
             })}
           </div>
