@@ -13,7 +13,7 @@ const Dance = () => {
             <Fade direction="up" duration={1200} triggerOnce="true">
               {dance.title && <h1>{dance.title}</h1>}
             </Fade>
-            <Fade direction="up" duration={1000} triggerOnce="true">
+            <Fade duration={1000} triggerOnce="true">
               {dance.desc && <p>{dance.desc}</p>}
             </Fade>
 
@@ -23,11 +23,11 @@ const Dance = () => {
                 return (
                   <div className={classes.vids}>
                     {/* Conditional Rendering - This means that if videos.title/videos.desc is not null then render <p>...</p>. */}
-                    <Fade direction="up" duration={1000} triggerOnce="true">
+                    <Fade delay={500} duration={500} triggerOnce="true">
                       {videos.title && <p>{videos.title}</p>}
+                      {videos.desc && <p>{videos.desc}</p>}
                     </Fade>
                     <Fade direction="up" duration={1200} triggerOnce="true">
-                      {videos.desc && <p>{videos.desc}</p>}
                       <div
                         dangerouslySetInnerHTML={{ __html: videos.code }}
                       ></div>

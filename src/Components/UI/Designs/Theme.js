@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./Theme.module.css";
+import { Fade } from "react-awesome-reveal";
 
 const Theme = () => {
   const videos = [
@@ -10,26 +11,35 @@ const Theme = () => {
 
   return (
     <div className={classes.Theme}>
-      <h1>TRMC - Theme Reveal</h1>
-      <p>
-        The conference’s theme was “Beyond All Limits”. To showcase and tease
-        the theme to our fellow potential delegates I created trailer videos and
-        animations to present TRMC’s 2022 vision.
-      </p>
-      <p>
-        <em>Using Adobe Illustrator, InDesign, After Effects, Premiere Pro</em>
-      </p>
-      <div className={classes.vids}>
-        {videos.map((video) => {
+      <Fade direction="up" duration={1200} triggerOnce="true">
+        <h1>TRMC - Theme Reveal</h1>
+      </Fade>
+      <Fade cascade='true' duration={500} triggerOnce="true">
+        <p>
+          The conference’s theme was “Beyond All Limits”. To showcase and tease
+          the theme to our fellow potential delegates I created trailer videos
+          and animations to present TRMC’s 2022 vision.
+        </p>
+        <p>
+          <em>
+            Using Adobe Illustrator, InDesign, After Effects, Premiere Pro
+          </em>
+        </p>
+      </Fade>
+      <Fade direction="up" duration={1200} triggerOnce="true">
+        <div className={classes.vids}>
+          {videos.map((video) => {
             return (
-                <div dangerouslySetInnerHTML={{__html: video}} className={classes.item}></div>
-            )
-        }) }
-      </div>
+              <div
+                dangerouslySetInnerHTML={{ __html: video }}
+                className={classes.item}
+              ></div>
+            );
+          })}
+        </div>
+      </Fade>
     </div>
   );
 };
 
 export default Theme;
-
-

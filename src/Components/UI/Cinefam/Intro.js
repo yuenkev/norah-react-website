@@ -1,11 +1,15 @@
 import React from "react";
 import classes from "./Intro.module.css";
 import Slideshow from "./Slideshow";
+import { Fade } from "react-awesome-reveal";
 
 const Intro = () => {
   return (
     <div className={classes.intro}>
-      <h2>CineFAM WOC Creators Database</h2>
+      <Fade direction="up" duration={1200} triggerOnce="true">
+        <h2>CineFAM WOC Creators Database</h2>
+      </Fade>
+      <Fade cascade='true' duration={1000} triggerOnce="true">
       <p>
         CineFAM is a Canadian not for profit initiative. Which works within the
         media industry to reduce systematic discrimination against gender and
@@ -15,7 +19,8 @@ const Intro = () => {
         (WOC) in media. To escalate the WOC creators’ exposure and employment
         opportunities. The following showcases my group and I's prototype.
       </p>
-      <Slideshow/>
+      </Fade>
+      <Slideshow />
     </div>
   );
 };

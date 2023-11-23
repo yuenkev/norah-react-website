@@ -16,15 +16,13 @@ const Work = () => {
             {work.arts.map((arts) => {
               return (
                 <div className={classes.art}>
-                  <Fade direction="up" duration={1000} triggerOnce="true">
+                  <Fade cascade='true' delay={500} duration={500} triggerOnce="true">
                     <p>
                       <a href={arts.link} className={classes.links}>
                         {arts.title}
                       </a>{" "}
                       {arts.year}
                     </p>
-                  </Fade>
-                  <Fade direction="up" duration={1200} triggerOnce="true">
                     <p className={classes.desc}>
                       <em>{arts.desc}</em>
                     </p>

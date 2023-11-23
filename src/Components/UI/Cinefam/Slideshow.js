@@ -5,7 +5,9 @@ import slide2 from "../../Assets/Images/CineFAM/slide2.png";
 import slide3 from "../../Assets/Images/CineFAM/slide3.png";
 import slide4 from "../../Assets/Images/CineFAM/slide4.png";
 
-const slides = [slide1, slide2, slide3, slide4]
+import { Fade } from "react-awesome-reveal";
+
+const slides = [slide1, slide2, slide3, slide4];
 const delay = 2500;
 
 const Slideshow = () => {
@@ -37,32 +39,36 @@ const Slideshow = () => {
   return (
     <div className={classes.slideshow}>
       {/* The Slides */}
-      <div
-        className={classes.slideshowSlider}
-        style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
-      >
-        {slides.map((slide, index) => (
-          <img
-            className={classes.slide}
-            key={index}
-            src={slide}
-            alt="Slide"
-          ></img>
-        ))}
-      </div>
-      
-      {/* The Dots */}
-      <div className="slideshowDots">
-        {slides.map((_, idx) => (
-          <div
-            key={idx}
-            className={classes[`slideshowDot${index === idx ? "active" : ""}`]}
-            onClick={() => {
-              setIndex(idx);
-            }}
-          ></div>
-        ))}
-      </div>
+      <Fade direction="up" duration={1000} triggerOnce="true">
+        <div
+          className={classes.slideshowSlider}
+          style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+        >
+          {slides.map((slide, index) => (
+            <img
+              className={classes.slide}
+              key={index}
+              src={slide}
+              alt="Slide"
+            ></img>
+          ))}
+        </div>
+
+        {/* The Dots */}
+        <div className="slideshowDots">
+          {slides.map((_, idx) => (
+            <div
+              key={idx}
+              className={
+                classes[`slideshowDot${index === idx ? "active" : ""}`]
+              }
+              onClick={() => {
+                setIndex(idx);
+              }}
+            ></div>
+          ))}
+        </div>
+      </Fade>
     </div>
   );
 };

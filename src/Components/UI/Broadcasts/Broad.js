@@ -18,15 +18,13 @@ const Broad = () => {
               {work.casts.map((casts) => {
                 return (
                   <div className={classes.art}>
-                    <Fade direction="up" duration={1000} triggerOnce="true">
+                    <Fade cascade='true' delay={500} duration={1000} triggerOnce="true">
                       <p>
                         <a href={casts.link} className={classes.links}>
                           {casts.title}
                         </a>{" "}
                         {casts.year}
                       </p>
-                    </Fade>
-                    <Fade direction="up" duration={1200} triggerOnce="true">
                       <p className={classes.desc}>
                         <em>{casts.desc}</em>
                       </p>

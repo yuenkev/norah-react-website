@@ -6,7 +6,7 @@ import { Fade } from "react-awesome-reveal";
 const Articles = () => {
   return (
     <>
-      <Fade direction="up" duration={1000} triggerOnce="true">
+      <Fade direction="up" duration={1200} triggerOnce="true">
         <h3>Articles & Editorial Work</h3>
       </Fade>
       <Work/>
