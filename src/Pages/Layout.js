@@ -1,32 +1,43 @@
 // The <Outlet> renders the current route selected.
 //<Link> is used to set the URL and keep track of browsing history.
 import { Outlet, Link } from "react-router-dom";
-import React, { useState } from "react";
+import React from "react";
 import { Fade } from "react-awesome-reveal";
 import Logo from "../Components/UI/HeadFoot/Header/Logo";
-import List from "../Components/UI/HeadFoot/Header/List";
 import Footer from "../Components/UI/HeadFoot/Footer/Footer";
 import classes from "../Components/UI/PageStyles/Layout.module.css";
 import resume from "../Components/Assets/RESUME_NORAHKIM.pdf";
+import { Dropdown, Space } from "antd";
 
 const Layout = () => {
-  //useState for displaying the portfolio menu
-  const [display, setDisplay] = useState(false);
-  const [show, setShow] = useState("none");
-
-  const onDisplay = () => {
-    setDisplay(true);
-    setShow("block");
-  };
-
-  const offDisplay = () => {
-    setDisplay(false);
-    setShow("none");
-  };
+  // Links to different portfolio pages
+  const items = [
+    {
+      key: "1",
+      label: <Link to="/articles">articles & editorial</Link>,
+    },
+    {
+      key: "2",
+      label: <Link to="/broadcasts">broadcasts & videography</Link>,
+    },
+    {
+      key: "3",
+      label: <Link to="/cinefam">cinefam woc database</Link>,
+    },
+    {
+      key: "4",
+      label: <Link to="/design">design & layout</Link>,
+    },
+    {
+      key: "5",
+      label: <Link to="/photo">photojournalism</Link>,
+    },
+  ];
 
   return (
     <>
       {/* Permanent Header */}
+
       <Fade direction="up" duration={1000} triggerOnce="true">
         <nav>
           {/* I put the logo here to make it coupled with the navbar */}
@@ -38,14 +49,16 @@ const Layout = () => {
               <Link to="/home">home</Link>
             </li>
             <li>
-              <Link
-                //Functions called when <li> on clicked
-                onClick={display ? offDisplay : onDisplay}
-                role="button"
-                tabIndex="-3"
+              <Dropdown
+                menu={{
+                  items,
+                }}
+                trigger={['hover']}
               >
-                portfolio
-              </Link>
+                <a href="#">
+                  <Space>portfolio</Space>
+                </a>
+              </Dropdown>
             </li>
             <li>
               <a href={resume}>resume/cv</a>
@@ -53,11 +66,6 @@ const Layout = () => {
           </ul>
         </nav>
       </Fade>
-
-      {/* hidden list -- If mouse is hovering, then display the portofolio list */}
-      <div style={{ display: show }}>
-        <List />
-      </div>
 
       {/* Page Content Below */}
       <Outlet />
