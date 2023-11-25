@@ -55,10 +55,10 @@ const Layout = () => {
                 }}
                 trigger={['hover']}
               >
-                <a href="#">
+                <Link>
                   <Space>portfolio</Space>
-                </a>
-              </Dropdown>
+                </Link>
+                </Dropdown>
             </li>
             <li>
               <a href={resume}>resume/cv</a>
