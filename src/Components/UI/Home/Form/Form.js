@@ -2,9 +2,23 @@ import React from "react";
 import classes from "./Form.module.css";
 
 const Form = () => {
+
+  //Handling 
+  const handleSubmit = (event) => {
+    // prevent the form submit from refreshing the page
+    event.preventDefault();
+
+    const { fname, lname, email, subject, message } = event.target;
+    console.log("First Name: ", fname.value);
+    console.log("Last Name: ", lname.value);
+    console.log("Email: ", email.value);
+    console.log("Subject: ", subject.value);
+    console.log("Message: ", message.value);
+  };
+
   return (
     <div className={classes.form}>
-      <form>
+      <form onSubmit={handleSubmit}>
         {/* Name Section */}
         <section>
           <span>Name </span>
@@ -12,16 +26,12 @@ const Form = () => {
           <br></br>
           <div className={classes.name}>
             <div className={classes.fname}>
-              <label for="fname" name="fname">
-                First Name:
-              </label>
-              <input type="text" id="fname" required></input>
+              <label>First Name:</label>
+              <input name="fname" type="text" required></input>
             </div>
             <div className={classes.lname}>
-              <label for="lname" name="lname">
-                Last Name:
-              </label>
-              <input type="text" id="lname" required></input>
+              <label>Last Name:</label>
+              <input name="lname" type="text" required></input>
             </div>
           </div>
         </section>
@@ -34,7 +44,7 @@ const Form = () => {
           <span className={classes.req}>(requried)</span>
           <br></br>
           <br></br>
-          
+
           <input type="text" id="email" required></input>
         </section>
 
@@ -47,7 +57,7 @@ const Form = () => {
           <br></br>
           <br></br>
 
-          <input type="text" id="subject" required></input>
+          <input name="subject" type="text" id="subject" required></input>
         </section>
 
         <br></br>
@@ -59,13 +69,13 @@ const Form = () => {
           <br></br>
           <br></br>
 
-          <input type="text" id="msg" required></input>
+          <input name="message" type="text" id="msg" required></input>
         </section>
 
         <br></br>
 
         {/* Submit btn */}
-        <input type="submit" className={classes.submit}></input>
+        <input name="submit" type="submit" className={classes.submit}></input>
       </form>
     </div>
   );
