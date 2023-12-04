@@ -45,10 +45,10 @@ const Layout = () => {
             <Logo />
           </Link>
           <ul className={classes.navbar}>
-            <li>
+            <li className={classes.navbarHov}>
               <Link to="/home">home</Link>
             </li>
-            <li>
+            <li className={classes.navbarHov}>
               <Dropdown
                 menu={{
                   items,
@@ -60,7 +60,7 @@ const Layout = () => {
                 </Link>
                 </Dropdown>
             </li>
-            <li>
+            <li className={classes.navbarHov}>
               <a href={resume}>resume/cv</a>
             </li>
           </ul>

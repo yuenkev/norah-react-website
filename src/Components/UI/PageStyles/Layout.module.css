@@ -1,35 +1,40 @@
 /* Styles for the Layout.Js */
 nav {
-    display:flex; 
-    flex-direction:row;
-    justify-content: space-between;
-  }
-  
-  body {
-    font-family: Merriweather;
-    letter-spacing: 0.02em;
-  }
-  
-  .navbar {
-    list-style-type: none;
-    text-align: right;
-    display: flex;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .navbar li {
-    display: inline-block;
-    padding-right: 2.6vw;
-  } 
-  
-  a {
-    text-decoration: none;
-    color: black;
-  }
+body {
+  font-family: Merriweather;
+  letter-spacing: 0.02em;
+}
 
-  a {
-    font-family: Merriweather;
-    color: black;
-  }
-  
-  
+.navbar {
+  list-style-type: none;
+  text-align: right;
+  display: flex;
+}
 
+.navbar li {
+  display: inline-block;
+  padding-right: 2.6vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a {
+  font-family: Merriweather;
+}
+
+.navbarHov {
+  transition: all 0.35s ease-in-out;
+}
+
+.navbarHov:hover {
+  transform: scale(1.1);
+  color: blue;
+}

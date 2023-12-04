@@ -40,6 +40,15 @@ input[type="submit"] {
     width: auto;
 }
 
+input[type="text"]{
+    text-align: start;
+}
+
 .msg input {
     height: 60px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
 }

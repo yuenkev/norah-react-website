@@ -2,6 +2,7 @@ import React from "react";
 import classes from "./Form.module.css";
 
 const Form = () => {
+
   //Handler Arrow Function, it has the event as a prop
   const handleSubmit = (event) => {
     // prevent the form submit from refreshing the page
@@ -50,6 +51,15 @@ const Form = () => {
         document.getElementById("result-text").innerText =
           "An unkown error occured.";
       });
+
+
+      //clear the form values
+      fname.value = "";
+      lname.value = "";
+      email.value = "";
+      subject.value = "";
+      message.value = "";
+
   };
 
   return (
@@ -105,7 +115,7 @@ const Form = () => {
           <br></br>
           <br></br>
 
-          <input name="message" type="text" id="msg" required></input>
+          <textarea name="message" type="text" id="msg" required></textarea>
         </section>
 
         <br></br>
