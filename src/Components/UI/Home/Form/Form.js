@@ -72,11 +72,11 @@ const Form = () => {
           <br></br>
           <div className={classes.name}>
             <div className={classes.fname}>
-              <label>First Name:</label>
+              <label>First Name</label>
               <input name="fname" type="text" required></input>
             </div>
             <div className={classes.lname}>
-              <label>Last Name:</label>
+              <label>Last Name</label>
               <input name="lname" type="text" required></input>
             </div>
           </div>

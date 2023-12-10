@@ -24,8 +24,8 @@ const Dance = () => {
                   <div className={classes.vids}>
                     {/* Conditional Rendering - This means that if videos.title/videos.desc is not null then render <p>...</p>. */}
                     <Fade delay={500} duration={500} triggerOnce="true">
-                      {videos.title && <p>{videos.title}</p>}
-                      {videos.desc && <p>{videos.desc}</p>}
+                        {videos.title && <p>{videos.title}</p>}
+                        {videos.desc && <p>{videos.desc}</p>}
                     </Fade>
                     <Fade direction="up" duration={1200} triggerOnce="true">
                       <div
