@@ -1,18 +1,31 @@
 .intro {
-    display: flex;
+  display: flex;
 }
 
-.subtitle{
-    text-align: left;
+.subtitle {
+  text-align: left;
 }
 
 .item {
-    flex-direction: row;
-    flex-basis: 50%;
-    padding: 1rem;
+  flex-direction: row;
+  flex-basis: 50%;
+  padding: 1rem;
+  width: 50%;
 }
 
 .gary {
-    max-width: 850px;
-    padding: 1rem;
+  max-width: 850px;
+  padding: 1rem;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  .gary {
+    max-width: 650px;
+  }
+
+  .intro p {
+    font-size: 1rem;
+  }
+
+  
 }

@@ -2,12 +2,17 @@
     display: flex;
     flex-direction: row;
     text-align: center;
+    gap:15px;
 }
 
 .item {
     flex-basis: 33.3%;
 }
 
+.hiring {
+    text-align: center;
+}
+
 .img1{
-    max-width: 550px;
+    width: 100%;
 }
