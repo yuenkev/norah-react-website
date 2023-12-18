@@ -5,7 +5,7 @@ React made it easy to build and showcase everything in a simple and engaging way
 
 # Hosting 
 
-This web application is hosted on netlify and you can access it through the link below: 
+This web application is hosted on Netlify and you can access it through the link below: 
 
 https://norahkkim.com/
 
