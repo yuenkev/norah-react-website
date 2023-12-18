@@ -14,3 +14,4 @@ https://norahkkim.com/
 - CSS
 - JavaScript (ES6)
 - [React.js](https://react.dev/)
+- AWS SES, Lambda, & API Gateway
