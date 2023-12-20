@@ -6,3 +6,11 @@
   padding-bottom: 5vw;
 }
 
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  .intro {
+    padding-right: 6vw;
+    padding-left: 6vw;
+  }
+
+  
+}
